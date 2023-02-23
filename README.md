@@ -16,6 +16,7 @@ Take a coffee break, open up the coffee break app.
 - User is prompted to add water to machine.
 - User is prompted to brew coffee
 - User is prompted to add cream and sugar
+- If user adds more than 3 sugar, display "Would you like some coffee with your sugar?"
 - (coffee with cream will be lighter brown, and more light as more cream is added)
 - User is prompted to pour coffee
 - WHEN user is holding the pour coffee button, THEN a meter will show how full the cup is.
