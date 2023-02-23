@@ -5,6 +5,7 @@ Take a coffee break, open up the coffee break app.
 ### To Do
 
 - Create figma
+- Use Canva to create images of coffee machine, mug, buttons, cream, sugar, coffee grinds, etc.
 - Choose colours for app and declare them as variables in global styles scss folder
 - Choose font family and declare it as variable in global styles scss folder
 - Mobile first

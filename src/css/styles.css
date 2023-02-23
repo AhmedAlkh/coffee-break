@@ -88,4 +88,48 @@ li {
   list-style: none;
 }
 
+:root {
+  --cream: #f0f0c9;
+  --coffee: #553a25;
+  --coffee-with-cream: #d6a04b;
+  --machine-yellow: #f0a202;
+  --machine-brown: #581f18;
+  --machine-pink: #d9bdc5;
+  --ff-courgette: "Courgette", cursive;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--cream);
+  font-family: var(--ff-courgette);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 50px; /* set the padding to be the height of the footer */
+}
+
 /*# sourceMappingURL=styles.css.map */
