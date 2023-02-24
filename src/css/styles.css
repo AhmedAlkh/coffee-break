@@ -113,6 +113,7 @@ body {
   justify-content: space-between;
   background-color: var(--cream);
   font-family: var(--ff-courgette);
+  overflow: hidden;
 }
 
 .sugarGrain {
@@ -122,6 +123,19 @@ body {
   background-color: #ffffff;
   border-radius: 40%;
   opacity: 0.8;
+}
+
+#creamSplash {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #fff8dc;
+  border-radius: 50%;
+  z-index: 9999;
 }
 
 header {

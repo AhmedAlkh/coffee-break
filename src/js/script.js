@@ -19,7 +19,6 @@
 // interrupt the process and reset to start
 // reset to start whenever button is pressed, during or after process.
 
-const creamBtn = document.querySelector(".cream-btn");
 const brewBtn = document.querySelector(".brew-btn");
 
 // ============================================ SUGAR BUTTON FUNCTIONALITY =================================================
@@ -81,3 +80,34 @@ sugarBtn.addEventListener("click", function () {
 });
 
 // ============================================ CREAM BUTTON FUNCTIONALITY =================================================
+document.addEventListener("DOMContentLoaded", function () {
+  // Set the duration and size of the splash
+  const splashDuration = 1;
+  const splashSize = 300;
+
+  // Create the splash animation
+  const splashTimeline = gsap.timeline({ paused: true });
+  splashTimeline.to("#creamSplash", {
+    duration: splashDuration,
+    scale: splashSize,
+    opacity: 0,
+    ease: "power2.in",
+  });
+
+  // Add event listener to cream button
+  const creamBtn = document.querySelector(".cream-btn");
+  creamBtn.addEventListener("click", function () {
+    // Show the cream splash element
+    gsap.set("#creamSplash", { display: "block" });
+    // Reset the splash size and opacity
+    gsap.set("#creamSplash", { scale: 0, opacity: 0.8 });
+
+    // Trigger the splash animation
+    splashTimeline.restart();
+
+    // Fix for the issue with resizing the screen
+    setTimeout(function () {
+      window.scrollTo(0, 0);
+    }, 10);
+  });
+});
